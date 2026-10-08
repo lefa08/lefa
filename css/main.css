@@ -2049,6 +2049,12 @@ blockquote {
 
 
 
+/* credentials */
+.logo-grid{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:18px}
+.logo-grid a{display:flex;flex-direction:column;align-items:center;gap:12px;padding:26px 18px;background:var(--card);border:1px solid var(--line);border-radius:16px;text-decoration:none;height:100%;transition:border-color .2s,transform .2s}
+.logo-grid a:hover{border-color:var(--blue);transform:translateY(-3px)}
+.logo-grid img{height:56px;width:auto;max-width:100%;object-fit:contain}
+.logo-grid span{font-size:.9rem;color:var(--muted)}
 
 /* projects */
 .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:32px}
@@ -2079,3 +2085,20 @@ figcaption p{color:var(--muted);font-size:.95rem;margin-top:4px}
   .nav nav{gap:14px}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+
+
+.cert-logo {
+    width: 64px;
+    height: 64px;
+    display: grid;
+    place-items: center;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.cert-logo img {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+    display: block;
+}
